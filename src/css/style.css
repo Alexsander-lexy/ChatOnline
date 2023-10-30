@@ -1,11 +1,32 @@
 body{
+    font-family: 'Courier New', Courier, monospace;
     background-color: #333; 
-    display: flex;
-    justify-content: center;
     margin: 0;
     padding: 0;  
-    
+    color: #FFF;
 }
-/* To fazendo com umas cores zuada so pra ficar facil de localizar cada coisa */
+
+
+section{
+    display: flex;
+}
+
+.sideBar{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    width: 25vw;
+    height: 90vh;
+}
+
+.container{
+    padding: 20px;
+    width: 70vw;
+    height: 94.5vh;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    background-color: aquamarine;
+}
 
 
