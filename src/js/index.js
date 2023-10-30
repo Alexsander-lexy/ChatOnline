@@ -1,15 +1,9 @@
 
+const formulario = document.getElementById('formulario');
+
+formulario.addEventListener('submit', function(event){
+    event.preventDefault();
 
 
-
-
-
-
-
-
-
-const btnEnviar = document.getElementById('btnEnviar');
-
-btnEnviar.addEventListener('click', function(){
-    alert('Clica aqui nao')
+    
 })

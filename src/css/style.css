@@ -1,9 +1,10 @@
 body{
     font-family: 'Courier New', Courier, monospace;
-    background-color: #333; 
+    background-color: black; 
     margin: 0;
     padding: 0;  
     color: #FFF;
+    padding: 1.5em;
 }
 
 
@@ -16,17 +17,100 @@ section{
     justify-content: center;
     padding: 20px;
     width: 25vw;
-    height: 90vh;
+    height: 88vh;
+    background-color: #333;
+    border-right: 1px solid #6f6e6e;
 }
 
+header{
+    position: absolute;
+    top: 1.5em;
+    left: 1.5em;
+    width: 25vw;
+    padding: 0 0.2px;
+    border-right: 1px solid #6f6e6e;
+    background-color: #4f4e4e;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+header .profile{
+    margin: .5em 2em;
+}
+
+
+
+
+
+
+
+
+
+
+.parte-cima-conversa{
+    background-color: #4f4e4e;
+    width: 71.7vw;
+    height: 5.07em;
+    cursor: pointer;
+    position: fixed;
+    top: 1.5em;
+    right: 1.5em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+form{
+    width: 100%;
+}
+
+
+
 .container{
-    padding: 20px;
-    width: 70vw;
-    height: 94.5vh;
+    border-left: none;
+    width: 80vw;
+    height: 93.1vh;
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
-    background-color: aquamarine;
+    background-color: #232222;
 }
 
 
+.mensagem{
+    background-color: rgb(57, 57, 57);
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mensagem input{
+    width: 75%;
+    padding: .8em;
+    height: 1.2em;
+    font-size: 1.05em;
+    border-radius: 10px;
+    margin: 0 2em;
+    border: none;
+    background-color: #5c5a5a;
+    color: #FFF;
+}
+
+.mensagem input:focus{
+    outline: none;
+}
+.mensagem input::placeholder{
+    color: #ccc;
+}
