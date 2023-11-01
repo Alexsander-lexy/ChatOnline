@@ -114,3 +114,40 @@ form{
 .mensagem input::placeholder{
     color: #ccc;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.chat{
+    background-color: rgb(58, 50, 39);
+    width: 94%;
+    padding: 1em;
+}
+
+
+.MSG2{
+    text-align: start;
+    background-color: brown;
+}
+
+.MSG1{
+    background-color: rgb(56, 100, 86);
+    width: 100%;
+    text-align: end;
+
+}
+
+.MSG2 p{
+    
+}
