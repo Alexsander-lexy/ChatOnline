@@ -1,20 +1,19 @@
-
 const formulario = document.getElementById('formulario');
+const input = document.getElementById('mensagem');
+const mensagemEnviada = document.getElementById('mensagem-enviada');
 
-formulario.addEventListener('submit', function(event){
+function handleSubmit(event) {
     event.preventDefault();
 
-    const input = document.getElementById("mensagem");
-    const pFrase = document.createElement('p');
-
-    if(input.value){
-        pFrase.classList.add('pFrase');
-        const mensagemEnviada = document.getElementById('mensagem-enviada');
-        pFrase.innerHTML = `<p class="MSG1">${input.value}</p>`;
-        mensagemEnviada.appendChild(pFrase);
-        input.value.innerHTML = '';
-    }else{  
+    if (!input.value) {
         return;
     }
-   
-});
+
+    const pFrase = document.createElement('p');
+    pFrase.classList.add('pFrase');
+    pFrase.innerHTML = `<p class="MSG1">${input.value}</p>`;
+    mensagemEnviada.appendChild(pFrase);
+    input.value = '';
+}
+
+formulario.addEventListener('submit', handleSubmit);

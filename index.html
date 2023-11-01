@@ -16,48 +16,26 @@
 
 <body>
     <section>
-
-
-        <!-- sessao para trocar de chat ou ver seu perfil -->
-        <div class="sideBar">
-            <header>
-                <div class="profile">
-                    <img src="src/img/perfil.png" width="60px" alt="perfil">
-                </div>
-                <h2>Perfil</h2>
-
-            </header>
-        </div> <!-- final sessao perfil -->
-
-
-        <div class="parte-cima-conversa">
-
-        </div>
-
-        <!-- sessao principal, onde o chat vai ficar esposto -->
         <main class="container">
-            
+
+            <div class="parte-cima-conversa"></div>
+
             <form id="formulario">
                 <div class="mensagem">
                     <input type="text" placeholder="Digite sua mensagem" id="mensagem" autocomplete="off">
                 </div>
 
             </form>
-
-
             <div class="chat">
                 <div class="mensagem-enviada" id="mensagem-enviada">
                     <p class="MSG1">mensagem-enviada</p>
                     <div class="MSG2">
                         <p>mensagem-recebida</p>
                     </div>
-                
+
                 </div>
             </div>
-
-        </main> <!--  final sessao chat -->
-
-
+        </main>
     </section>
     <script type="module" src="src/js/index.js"></script>
 </body>
